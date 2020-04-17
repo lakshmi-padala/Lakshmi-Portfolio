@@ -7,19 +7,18 @@ import Skills from './contents/Skills';
 import Contact from './contents/Contact';
 import Home from'./contents/Home';
 import About from './contents/About';
-import Social from './components/Social'
-import Header from './components/Header'
 function App() {
   return (
+    
     <Router>
-      <div className="header">
-        <Header/>
-      </div>
-      
+    
+    
     <div className="App">
+    
+      
       <Navbar />
       
-      <Social/>
+      
       <Route exact path="/">
         <Home/>
       </Route>
@@ -36,6 +35,7 @@ function App() {
       <Route path="/contact">
         <Contact/>
       </Route>
+      
     
     </div>
     </Router>

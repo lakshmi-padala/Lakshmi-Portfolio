@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=sans-serif:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap');
 :root{
   --sidebar-flex:1.5;
   --condiv-flex:6;
   --fontsize-p:1.2rem;
   --fontsize-nav:1.6rem;
   --typing-font:3rem;
+
 }
 *
 {
@@ -12,45 +13,32 @@
   padding: 0;
 }
 body{
-  font-family:sans-serif;
-}
-.header{
+  font-family:'Raleway';
 
-  position:-webkit-sticky;
-  position:sticky;
-  top:0;
-  right:0;
-  color:whitesmoke;
-  font-size: 20px;
-  text-align:center;
-  padding: 20px;
-  border: 1px solid whitesmoke;
-  background-color:rgb(238, 103, 143);
 }
-
 
 .App
 {
+top:0;
+bottom: 0;
   display: flex;
   width: 100vw;
   min-height: 100vh;
+  
 }
-.active{
-color:white;
-font-weight:bolder;
-}
-nav
-{
 
-  padding:60px 30px 0px 30px ;
-  flex:var(--sidebar-flex);
-  background: rgb(238,103,143);
-}
 .condiv   /*.condiv class is for the right side content container*/
 {
   padding: 100px ;
-  background-color: #f4f5f9;
   flex:var(--condiv-flex);
+  background-image:url("img/Pic.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  position: relative;
+  background-size: cover;
+
+  color: whitesmoke;
+
 }
 
 .home
@@ -59,13 +47,21 @@ nav
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+
+ 
 }
 .profilepic
 {
-  border-radius: 50%;
-  width: 200px;
-  margin: 30px;
+  border-radius: 40%;
+  width: 150px;
+  margin: 20px;
+}
+
+nav
+{
+  padding:55px 30px 0px 30px ;
+  flex:var(--sidebar-flex);
+  background: linear-gradient(180deg, #d31775 50%,yellow 80%);
 }
 nav ul{
   font-size:var(--fontsize-nav) ;
@@ -79,6 +75,10 @@ nav ul li
   margin:40px;
 }
 
+.active{
+  color:white;
+  font-weight:bolder;
+  }
 a
 {
   text-decoration: none;
@@ -91,7 +91,7 @@ li a:hover{
 
 .subtopic 
 {
-  margin:20px 20px 30px 10px !important;
+  margin:10px 10px 30px 10px !important;
 }
 p{
   font-size: var(--fontsize-p);
@@ -101,16 +101,19 @@ h1,h2,h3,h4,p{
 }
 .social
 {
-  margin-top:30px;
-  bottom:40px;
   display:flex;
-  position:absolute;
-  height:10px;
+  justify-content: space-around;
+  position: absolute;
   padding-left:80px;
-
+  bottom:60px;
+  margin-top:20px;
+  padding-right:25px;
+  color:#9a9b9c;
+  font-size: 25px;
+    
 }
 .social a:hover{
-  color: black;
+  color:#ffffff;
 
 }
 .widecard

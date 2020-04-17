@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navitem from './Navitem'
- class Navbar extends Component {
+import profilepic from '../img/LakshmiP_photo.jpg'
+class Navbar extends Component {
      constructor(props) {
          super(props)
      
@@ -21,12 +22,14 @@ import Navitem from './Navitem'
         return (
             <nav>
                 <ul>
+                <img src={profilepic} className="profilepic" alt=""></img> 
                     <Navitem item="Home" tolink="/" activec={this.activeitem}></Navitem>
                     <Navitem item="About" tolink="/about" activec={this.activeitem}></Navitem>
                     <Navitem item="Education" tolink="/education"activec={this.activeitem}></Navitem>
                     <Navitem item="Skills" tolink="/skills"activec={this.activeitem}></Navitem>
                     <Navitem item="Contact" tolink="/contact"activec={this.activeitem}></Navitem>
                 </ul>
+            
             </nav>
         )
     }
